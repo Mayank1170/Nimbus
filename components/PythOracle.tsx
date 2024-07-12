@@ -18,7 +18,6 @@ const PythOracle: React.FC<PythOracleProps> = ({ onPriceUpdate }) => {
     useEffect(() => {
         const fetchPythPrice = async () => {
             try {
-                // ETH/USD price feed ID
                 const ethUsdFeedId = "ef0d8b6fda2ceba41da15d4095d1da392a0d2f8ed0c6c7bc0f4cfac8c280b56d";
                 const response = await axios.get<PriceData[]>(`https://hermes.pyth.network/api/latest_price_feeds?ids[]=${ethUsdFeedId}`);
                 if (response.data && response.data.length > 0) {
@@ -32,8 +31,7 @@ const PythOracle: React.FC<PythOracleProps> = ({ onPriceUpdate }) => {
         };
 
         fetchPythPrice();
-        const interval = setInterval(fetchPythPrice, 600); // Update every minute
-
+        const interval = setInterval(fetchPythPrice, 600);
         return () => clearInterval(interval);
     }, [onPriceUpdate]);
 

@@ -9,8 +9,7 @@ const OracleAggregator: React.FC = () => {
         setPythPrice(price);
     }, []);
 
-   
-    const aggregatedPrice = pythPrice 
+    const aggregatedPrice = pythPrice
         ? (pythPrice + 5000) / 2
         : null;
 
