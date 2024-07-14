@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       </Head>
       <main className=''>
         <Header />
-        <div className='h-[300vh]'>
+        <div className=''>
           <Navbar onTabChange={onTabChange} />
           <OracleAggregator symbol={selectedTab} />
         </div>
