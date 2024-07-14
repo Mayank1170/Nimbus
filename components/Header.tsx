@@ -8,9 +8,9 @@ const Header = () => {
     return (
         <div className='m-4 flex flex-col gap-[30px]'>
             <div className='flex flex-row justify-between gap-2 items-center'>
-                <div className='flex flex-row items-center'>
-                    <Image className='w-[25px] h-[25px]' alt='' src={Logo} width={1000} height={1000} />
-                    <h4 className='text-[#F18B76] font-semibold'>OracleAggregator</h4>
+                <div className='flex flex-row items-center gap-1'>
+                    <Image className='w-[25px] h-[25px]' alt='Nimbus Logo' src={Logo} width={1000} height={1000} />
+                    <h4 className='text-[#F18B76] font-semibold'>Nimbus</h4>
                 </div>
                 <Link href="https://github.com/Mayank1170/oracle-aggregator" className="text-[#F18B76] flex flex-row items-center gap-1 hover:text-[#fc6749] transition-colors">
                     <FaGithub />Github

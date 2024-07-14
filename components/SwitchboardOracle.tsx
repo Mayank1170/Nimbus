@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchSwitchboardPrice } from '../utils/fetchSwitchboardPrice';
+import { GoArrowUpRight } from "react-icons/go";
+import Link from 'next/link';
 
 interface SwitchboardOracleProps {
   symbol: string;
@@ -39,7 +41,10 @@ const SwitchboardOracle: React.FC<SwitchboardOracleProps> = ({ symbol, onPriceUp
 
   return (
     <div>
-      <h3>Switchboard Oracle Price</h3>
+      <Link href={"https://switchboard.xyz/"} className='flex flex-row gap-2 items-center'>
+        <h3>Switchboard Oracle Price</h3>
+        <GoArrowUpRight />
+      </Link>
       {price !== undefined ? (
         <p className='text-2xl font-semibold  text-gray-400'>${price.toFixed(10)}</p>
       ) : (

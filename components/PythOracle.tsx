@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchPythPrice } from '../utils/fetchPythPrice';
+import { GoArrowUpRight } from "react-icons/go";
+import Link from 'next/link';
 
 interface PythOracleProps {
   symbol: string;
@@ -38,7 +40,10 @@ const PythOracle: React.FC<PythOracleProps> = ({ symbol, onPriceUpdate }) => {
 
   return (
     <div>
-      <h3>Pyth Oracle Price</h3>
+      <Link href={"https://pyth.network/"} className='flex flex-row gap-2 items-center'>
+        <h3>Pyth Oracle Price</h3>
+        <GoArrowUpRight />
+      </Link>
       {price !== undefined ? (
         <p className='text-2xl font-semibold text-gray-400'>${price.toFixed(10)}</p>
       ) : (

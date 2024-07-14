@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Navbar } from '../components/CoinNav';
 import OracleAggregator from '../components/OracleAggregator';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   const [selectedTab, setSelectedTab] = useState<
@@ -22,7 +23,11 @@ const Home: NextPage = () => {
       <Head>
         <title>Oracle Aggregator</title>
         <meta name="description" content="Oracle Aggregator using Pyth" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="shortcut icon"
+          href="../public/Logo.svg"
+          type="image/x-icon"
+        />
       </Head>
       <main className=''>
         <Header />
@@ -30,6 +35,7 @@ const Home: NextPage = () => {
           <Navbar onTabChange={onTabChange} />
           <OracleAggregator symbol={selectedTab} />
         </div>
+        <Footer />
       </main>
     </div>
   );
