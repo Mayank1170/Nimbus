@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chainlink/contracts": "^1.1.1",
     "@pythnetwork/client": "^2.21.1",
+    "@pythnetwork/price-service-client": "^1.9.0",
     "@solana/web3.js": "^1.95.0",
+    "@switchboard-xyz/solana.js": "^3.2.5",
     "axios": "^1.7.2",
+    "classnames": "^2.5.1",
+    "framer-motion": "^11.3.2",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"
