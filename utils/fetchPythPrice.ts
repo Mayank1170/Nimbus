@@ -14,7 +14,7 @@ export async function fetchPythPrice(symbol: string): Promise<FetchPriceResponse
       { method: "GET" }
     );
     const data: PythResponse[] = await response.json();
-    console.log('Pyth API response:', data[0].price.price); // Log the API response
+    console.log('Pyth API response:', data); 
 
     if (!data || !data[0] || !data[0].price) {
       return undefined;

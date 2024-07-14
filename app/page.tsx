@@ -2,7 +2,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useState } from 'react';
-import { Navbar } from '../components/Navbar';
+import { Navbar } from '../components/CoinNav';
 import OracleAggregator from '../components/OracleAggregator';
 import Header from '../components/Header';
 
@@ -24,9 +24,9 @@ const Home: NextPage = () => {
         <meta name="description" content="Oracle Aggregator using Pyth" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className=''>
         <Header />
-        <div className=''>
+        <div className='h-[300vh]'>
           <Navbar onTabChange={onTabChange} />
           <OracleAggregator symbol={selectedTab} />
         </div>
