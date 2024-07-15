@@ -34,7 +34,7 @@ Ensure you have the following installed:
    git clone https://github.com/Mayank1170/Nimbus
 2. Navigate to the project directory:
    ```bash
-   cd oracle-aggregator
+   cd Nimbus
 3. Install the dependencies:
    ```bash 
    npm install
