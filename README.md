@@ -56,8 +56,8 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ### Acknowledgments
 
-   [Pyth Network](https://pyth.network/) for providing price feed data
-   [Switchboard Protocol](https://switchboard.xyz/) for providing oracle services
+   [Pyth Network](https://pyth.network/) and [Switchboard Protocol](https://switchboard.xyz/) for providing price feed data
+   and oracle services
 
 
 
